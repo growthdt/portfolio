@@ -30,6 +30,12 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
+    --modern: 120.86deg 100% 50%;
+    --modern-foreground: ;
+
+    --modern2: 196.57deg 98.47% 74.31%;
+    --modern2-foreground: ;
+
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
@@ -84,7 +90,7 @@
     font-family: "ClashGrotesk-Variable", sans-serif;
   }
   .text-gradient {
-    @apply bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent;
+    @apply bg-gradient-to-br from-modern to-modern2 bg-clip-text text-transparent;
   }
   .nav-active {
     color: rgb(226 232 240) !important;
