@@ -12,11 +12,11 @@ export default function Footer() {
       const date = new Date();
       date.setHours(date.getHours());
       setTime(
-        date.toLocaleTimeString("en-US", {
-          hour12: true,
+        date.toLocaleTimeString("pt-BR", {
+          hour12: false, // Usa o formato 12 horas (AM/PM)
           hour: "numeric",
           minute: "numeric",
-        }),
+        })
       );
     }, 1000);
     return () => clearInterval(interval);
@@ -27,30 +27,30 @@ export default function Footer() {
       <div className="container mx-auto flex flex-row items-center justify-between py-6">
         <span className="flex flex-row items-center space-x-4">
           <p className="text-xs text-muted-foreground">
-            Made with ❤️ by{" "}
+            Made with 💚 by{" "}
             <Link
-              href="https://github.com/wendoj"
+              href="https://github.com/growthdt"
               target="_blank"
               passHref
               className="text-foreground transition hover:text-primary"
             >
-              wendoj
+              Growth Technology
             </Link>
           </p>
           <hr className="hidden h-6 border-l border-muted md:flex" />
           <span className="flex hidden flex-row items-center space-x-2 md:flex">
-            <p className="text-xs text-muted-foreground">Local time:</p>
-            <p className="text-sm font-semibold">{time} UTC+1</p>
+            <p className="text-xs text-muted-foreground">Horário Local:</p>
+            <p className="text-sm font-semibold">{time}</p>
           </span>
         </span>
         <Link
-          href="mailto:wendoj@proton.me"
+          href="growthdt@gmail.com"
           passHref
           className="text-xs text-muted-foreground hover:text-foreground"
         >
           <Button variant={"outline"}>
             <MailIcon className="h-4 w-4 md:mr-2" />
-            <span className="hidden md:flex">wendoj@proton.me</span>
+            <span className="hidden md:flex">growthdt@gmail.com</span>
           </Button>
         </Link>
       </div>

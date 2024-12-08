@@ -37,32 +37,32 @@ const projects = [
   {
     title: "Unqueue",
     description: "E-commerce platform for selling digital products",
-    image: "/assets/unqueue.webm",
-    href: "https://unqueue.shop/",
+    image: "",
+    href: "",
   },
   {
     title: "InfiniteVPS",
     description: "High performance VPS hosting solution",
-    image: "/assets/infinitevps.webm",
+    image: "",
     href: "#",
   },
   {
     title: "TranslateBot",
     description: "Powerful Multilingual Translation Bot for Discord",
-    image: "/assets/translate_bot.webm",
-    href: "https://translatebot.app/",
+    image: "",
+    href: "",
   },
   {
     title: "Wrona",
     description: "Robotics-focused technology company",
-    image: "/assets/wrona.jpeg",
-    href: "https://www.wrona.com/",
+    image: "",
+    href: "",
   },
   {
     title: "This website",
     description: "My personal website",
-    image: "/assets/portfolio.webm",
-    href: "https://github.com/wendoj/portfolio",
+    image: "",
+    href: "",
   },
 ];
 
@@ -182,7 +182,7 @@ export default function Home() {
               data-scroll
               data-scroll-direction="horizontal"
               data-scroll-speed=".09"
-              className="flex flex-row items-center space-x-1.5"
+              className="flex flex-row w-[440px] items-start space-x-1.5"
             >
               <span className={styles.pill}>web sites</span>
               <span className={styles.pill}>landing pages</span>
@@ -218,8 +218,8 @@ export default function Home() {
               data-scroll-speed=".06"
               className="flex flex-row items-center space-x-1.5 pt-6"
             >
-              <Link href="mailto:wendoj@proton.me" passHref>
-                <Button>
+              <Link href="growthdt@gmail.com" passHref>
+                <Button variant="basicGrowth">
                   Entre em contato <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
               </Link>
@@ -379,8 +379,8 @@ export default function Home() {
                 <h2 className="text-4xl font-medium tracking-tight">
                 Precisa de mais informações?
                   <br />
-                  <span className="text-gradient clash-grotesk tracking-normal">
-                  A Growth te ajuda!
+                  <span className="text-white clash-grotesk tracking-normal">
+                  A <span className="text-gradient">Growth</span> te ajuda!
                   </span>
                 </h2>
                 <p className="mt-2 tracking-tighter text-secondary-foreground">
@@ -392,7 +392,7 @@ export default function Home() {
                   key={service.service}
                   className="flex flex-col items-start rounded-md bg-white/5 p-14 shadow-md backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:bg-white/10 hover:shadow-md"
                 >
-                  <service.icon className="my-6 text-primary" size={20} />
+                  <service.icon className="my-6 text-green-500" size={20} />
                   <span className="text-lg tracking-tight text-foreground">
                     {service.service}
                   </span>
@@ -420,8 +420,8 @@ export default function Home() {
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
             No momento, estamos disponíveis para desenvolver projetos e entregar soluções sob medida para as suas necessidades.
             </p>
-            <Link href="mailto:wendoj@proton.me" passHref>
-              <Button className="mt-6">Get in touch</Button>
+            <Link href="growthdt@gmail.com" passHref>
+              <Button variant="basicGrowth" className="mt-6">Entre em contato</Button>
             </Link>
           </div>
         </section>

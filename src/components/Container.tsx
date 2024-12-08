@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { useRouter } from "next/router";
 import Preloader from "@/components/Preloader";
 import styles from "@/styles/Container.module.css";
+import Image from 'next/image';
 
 type IconProps = {
   ["data-hide"]: boolean;
@@ -163,7 +164,15 @@ export default function Container(props: ContainerProps) {
           </button>
         </div>
         <Link href="/">
-          <span className="text-lg font-semibold">growth</span>
+          <div className="flex flex-row">
+            <span className="text-lg font-semibold">growTh</span>
+                  <Image
+                    src="/assets/logo.png"
+                    alt="Exemplo de imagem"
+                    width={30}
+                    height={30}
+                  />
+          </div>
         </Link>
 
         {/* Desktop menu */}
