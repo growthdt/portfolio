@@ -83,9 +83,9 @@ export default function Container(props: ContainerProps) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: "Wendo",
-    description: `Full-stack website developer and TypeScript enthusiast.`,
-    image: "/assets/logo.webp",
+    title: "GrowTh",
+    description: `Soluções inovadoras e de alta qualidade para impulsionar o crescimento digital da sua empresa.`,
+    image: "/assets/logo.png",
     type: "website",
     ...customMeta,
   };

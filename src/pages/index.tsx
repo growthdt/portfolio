@@ -26,6 +26,7 @@ import {
 } from "@/components/ui/carousel";
 import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
+import { Url } from "next/dist/shared/lib/router/router";
 
 const aboutStats = [
   { label: "Anos de experiência", value: "3+" },
@@ -35,32 +36,32 @@ const aboutStats = [
 
 const projects = [
   {
-    title: "Unqueue",
-    description: "E-commerce platform for selling digital products",
+    title: "1",
+    description: "",
     image: "",
     href: "",
   },
   {
-    title: "InfiniteVPS",
-    description: "High performance VPS hosting solution",
+    title: "2",
+    description: "",
     image: "",
     href: "#",
   },
   {
-    title: "TranslateBot",
-    description: "Powerful Multilingual Translation Bot for Discord",
+    title: "3",
+    description: "",
     image: "",
     href: "",
   },
   {
-    title: "Wrona",
-    description: "Robotics-focused technology company",
+    title: "4",
+    description: "",
     image: "",
     href: "",
   },
   {
     title: "This website",
-    description: "My personal website",
+    description: "",
     image: "",
     href: "",
   },
@@ -99,6 +100,7 @@ export default function Home() {
   const [carouselApi, setCarouselApi] = useState<CarouselApi | null>(null);
   const [current, setCurrent] = useState<number>(0);
   const [count, setCount] = useState<number>(0);
+  const wppContact = process.env.NEXT_PUBLIC_WHATSAPP_CONTACT;
 
   // handle scroll
   useEffect(() => {
@@ -218,7 +220,7 @@ export default function Home() {
               data-scroll-speed=".06"
               className="flex flex-row items-center space-x-1.5 pt-6"
             >
-              <Link href="growthdt@gmail.com" passHref>
+              <Link href={wppContact as Url} passHref>
                 <Button variant="basicGrowth">
                   Entre em contato <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
@@ -420,7 +422,7 @@ export default function Home() {
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
             No momento, estamos disponíveis para desenvolver projetos e entregar soluções sob medida para as suas necessidades.
             </p>
-            <Link href="growthdt@gmail.com" passHref>
+            <Link href={wppContact as Url} passHref>
               <Button variant="basicGrowth" className="mt-6">Entre em contato</Button>
             </Link>
           </div>
