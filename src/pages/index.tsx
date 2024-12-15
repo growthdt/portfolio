@@ -27,6 +27,7 @@ import {
 import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
 import { Url } from "next/dist/shared/lib/router/router";
+import ContactCircle from "@/components/animated/contact-circle";
 
 const aboutStats = [
   { label: "Anos de experiência", value: "3+" },
@@ -198,7 +199,7 @@ export default function Home() {
                 data-scroll-direction="horizontal"
               >
                 <span className="text-6xl tracking-tighter text-foreground 2xl:text-8xl">
-                  Growth 
+                  Grow 
                   <br />
                 </span>
                 <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
@@ -213,6 +214,7 @@ export default function Home() {
               >
                 Transformamos suas ideias em soluções digitais de sucesso.
               </p>
+              <ContactCircle/>
             </div>
             <span
               data-scroll

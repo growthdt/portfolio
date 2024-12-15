@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 import Preloader from "@/components/Preloader";
 import styles from "@/styles/Container.module.css";
 import Image from 'next/image';
+import ContactCircle from "./animated/contact-circle";
 
 type IconProps = {
   ["data-hide"]: boolean;
@@ -165,7 +166,7 @@ export default function Container(props: ContainerProps) {
         </div>
         <Link href="/">
           <div className="flex flex-row">
-            <span className="text-lg font-semibold">growTh</span>
+            <span className="text-lg font-semibold">grow</span>
                   <Image
                     src="/assets/logo.png"
                     alt="Exemplo de imagem"
@@ -174,7 +175,6 @@ export default function Container(props: ContainerProps) {
                   />
           </div>
         </Link>
-
         {/* Desktop menu */}
         <ul className={styles["desktop-nav"]}>
           {navLinks.map((link, i) => (
@@ -254,7 +254,10 @@ export default function Container(props: ContainerProps) {
       </AnimatePresence>
 
       {/* Main content */}
-      <main className={cn("container", props.className)}>{children}</main>
+      <main className={cn("container", props.className)}>
+
+        {children}
+      </main>
       <Footer />
     </>
   );
