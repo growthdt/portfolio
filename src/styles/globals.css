@@ -43,6 +43,10 @@
     --radius: 0.5rem;
   }
 }
+.container {
+  @apply w-[140%] px-8 sm:w-full xl:px-0
+}
+
 /* global elements */
 @layer base {
   html[data-scroll-orientation="horizontal"] {
