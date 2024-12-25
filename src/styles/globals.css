@@ -30,7 +30,7 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --modern: 120.86deg 100% 50%;
+    --modern: 220.74deg 67.45% 48.54%;
     --modern-foreground: ;
 
     --modern2: 196.57deg 98.47% 74.31%;
@@ -43,7 +43,6 @@
     --radius: 0.5rem;
   }
 }
-
 /* global elements */
 @layer base {
   html[data-scroll-orientation="horizontal"] {

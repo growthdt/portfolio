@@ -11,7 +11,7 @@ export default function ContactCircle() {
         <Link href={wppContact as Url} passHref>
             <div className="fixed top-[600px] left-[1320px] h-[100px] w-[100px] flex items-center justify-center animate-[effect_8s_linear_infinite] cursor-pointer z-40">
                 <img
-                    src="/assets/logo.png"
+                    src="/assets/wpp.jpg"
                     alt="Imagem central"
                     className="absolute h-[100px] w-[100px] rounded-full object-cover"
                 />

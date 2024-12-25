@@ -84,7 +84,7 @@ export default function Container(props: ContainerProps) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: "GrowTh",
+    title: "Martins Soluções Web",
     description: `Soluções inovadoras e de alta qualidade para impulsionar o crescimento digital da sua empresa.`,
     image: "/assets/logo.png",
     type: "website",
@@ -165,14 +165,15 @@ export default function Container(props: ContainerProps) {
           </button>
         </div>
         <Link href="/">
-          <div className="flex flex-row">
-            <span className="text-lg font-semibold">grow</span>
+          <div className="flex flex-row gap-2 items-center">
                   <Image
                     src="/assets/logo.png"
                     alt="Exemplo de imagem"
                     width={30}
                     height={30}
                   />
+                  <span className="text-lg font-semibold">Soluções</span>
+                  <span className="text-lg font-semibold text-gradient">{'Web'}</span>
           </div>
         </Link>
         {/* Desktop menu */}

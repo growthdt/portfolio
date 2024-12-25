@@ -30,7 +30,7 @@ import { Url } from "next/dist/shared/lib/router/router";
 import ContactCircle from "@/components/animated/contact-circle";
 
 const aboutStats = [
-  { label: "Anos de experiência", value: "3+" },
+  { label: "Anos de experiência", value: "4+" },
   { label: "Tecnologias dominadas", value: "15+" },
   { label: "Produtos desenvolvidos", value: "8+" },
 ];
@@ -93,6 +93,12 @@ const services = [
       "Desenvolvendo lógica robusta e escalável do lado do servidor para uma ampla gama de aplicativos da web.",
     icon: Eye,
   },
+  {
+    service: "Automação de atendimento via WhatsApp",
+    description:
+      "Automatizando interações no WhatsApp com bots inteligentes, proporcionando suporte ágil, personalizado e disponível em 100% do tempo.",
+    icon: Eye,
+  }
 ];
 
 export default function Home() {
@@ -178,16 +184,16 @@ export default function Home() {
         <section
           id="home"
           data-scroll-section
-          className="mt-40 flex w-full flex-col items-center xl:mt-0 xl:min-h-screen xl:flex-row xl:justify-between"
+          className="mt-40 flex w-full flex-col items-center xl:mt-0 xl:min-h-screen xl:flex-row xl:justify-evenly"
         >
           <div className={styles.intro}>
             <div
               data-scroll
               data-scroll-direction="horizontal"
               data-scroll-speed=".09"
-              className="flex flex-row w-[440px] items-start space-x-1.5"
+              className="flex flex-row w-[520px] items-start space-x-1.5"
             >
-              <span className={styles.pill}>web sites</span>
+              <span className={styles.pill}>todos os tipos de sites</span>
               <span className={styles.pill}>landing pages</span>
               <span className={styles.pill}>apps</span>
             </div>
@@ -199,11 +205,12 @@ export default function Home() {
                 data-scroll-direction="horizontal"
               >
                 <span className="text-6xl tracking-tighter text-foreground 2xl:text-8xl">
-                  Grow 
+                  Martins 
                   <br />
+                  Soluções
                 </span>
                 <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
-                Technology
+                 {' Web'}
                 </span>
               </h1>
               <p
@@ -212,7 +219,7 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                Transformamos suas ideias em soluções digitais de sucesso.
+                Criação de sites, aplicativos e automação de atendimento via WhatsApp para impulsionar o seu negócio.
               </p>
               <ContactCircle/>
             </div>
@@ -253,16 +260,10 @@ export default function Home() {
             data-scroll
             data-scroll-speed=".4"
             data-scroll-position="top"
-            className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
+            className="my-14 flex max-w-6xl flex-col justify-start space-y-10 xl:space-y-0 xl:my-0"
           >
             <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-            Desde 2021, a Growth Technology tem se dedicado a criar soluções digitais inovadoras{" "}
-            ,escaláveis e de excelência.
-            Aqui, acreditamos que cada projeto é único e merece a 
-            tecnologia certa para alcançar os melhores resultados. 
-            Seja para desenvolver sites, aplicativos ou soluções personalizadas, 
-            estamos prontos para transformar sua visão em realidade, sempre utilizando 
-            as ferramentas e estratégias mais adequadas às suas necessidades.
+            Com 4 anos de experiência no mercado, a Martins Soluções Web é especialista em transformar negócios com sites de alta conversão, aplicativos personalizados e automação inteligente via WhatsApp. Nosso foco é entender suas necessidades, adaptar cada projeto ao seu orçamento e entregar soluções que impulsionam sua presença online de forma estratégica e eficiente.
             </h2>
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
@@ -367,7 +368,7 @@ export default function Home() {
             data-scroll
             data-scroll-speed=".4"
             data-scroll-position="top"
-            className="my-24 flex flex-col justify-start space-y-10"
+            className="my-24 flex flex-col justify-start space-y-10 lg:my-0"
           >
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -384,7 +385,7 @@ export default function Home() {
                 Precisa de mais informações?
                   <br />
                   <span className="text-white clash-grotesk tracking-normal">
-                  A <span className="text-gradient">Growth</span> te ajuda!
+                  <span className="text-gradient">Ajudamos você!</span>
                   </span>
                 </h2>
                 <p className="mt-2 tracking-tighter text-secondary-foreground">
@@ -396,7 +397,7 @@ export default function Home() {
                   key={service.service}
                   className="flex flex-col items-start rounded-md bg-white/5 p-14 shadow-md backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:bg-white/10 hover:shadow-md"
                 >
-                  <service.icon className="my-6 text-green-500" size={20} />
+                  <service.icon className="my-6 text-blue-500" size={20} />
                   <span className="text-lg tracking-tight text-foreground">
                     {service.service}
                   </span>
