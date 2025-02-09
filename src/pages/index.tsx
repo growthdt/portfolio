@@ -31,28 +31,28 @@ import ContactCircle from "@/components/animated/contact-circle";
 
 const aboutStats = [
   { label: "Anos de experiência", value: "4+" },
-  { label: "Tecnologias dominadas", value: "15+" },
-  { label: "Produtos desenvolvidos", value: "8+" },
+  { label: "Tecnologias dominadas", value: "10+" },
+  { label: "Produtos desenvolvidos", value: "5+" },
 ];
 
 const projects = [
   {
-    title: "1",
-    description: "",
-    image: "",
-    href: "",
+    title: "MContabilidade",
+    description: "Seu melhor escritório de contabilidade!",
+    image: "https://i.ibb.co/CpbYL0L6/Screenshot-2025-02-09-at-15-40-35.png",
+    href: "https://martinssolucoesweb.site/mcontabilidade",
   },
   {
-    title: "2",
-    description: "",
-    image: "",
-    href: "#",
+    title: "Condomínio Villa Di Parma II",
+    description: "Transparência, comodidade e segurança!",
+    image: "https://i.ibb.co/vChWS1LP/Screenshot-2025-02-09-at-15-41-23.png",
+    href: "https://martinssolucoesweb.site/villadiparmaii/",
   },
   {
-    title: "3",
-    description: "",
-    image: "",
-    href: "",
+    title: "Curso de CupCakes da Mari",
+    description: "Aprenda a se destacar da concorrência criando CupCakes confeitados incríveis para suas clientes.",
+    image: "https://i.ibb.co/kV6cFMNv/Screenshot-2025-02-09-at-15-42-30.png",
+    href: "https://martinssolucoesweb.site/cupcakesdamari",
   },
   {
     title: "4",

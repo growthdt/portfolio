@@ -29,6 +29,9 @@ const config = withPWA({
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    domains: ['i.ibb.co'], // Adiciona o domínio permitido para o carregamento de imagens externas
+  },
 });
 
 export default config;
