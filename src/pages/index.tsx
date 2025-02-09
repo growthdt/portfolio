@@ -255,12 +255,12 @@ export default function Home() {
         </section>
 
         {/* About */}
-        <section id="about" data-scroll-section className="p-y-40 sm:p-y-auto">
+        <section id="about" data-scroll-section  className="h-[100vh]">
           <div
             data-scroll
             data-scroll-speed=".4"
             data-scroll-position="top"
-            className="mt-40 sm:my-64 flex max-w-6xl flex-col justify-start sm:space-y-10 xl:space-y-0 xl:my-0"
+            className="mt-40 h-full sm:my-64 flex max-w-6xl flex-col justify-start sm:space-y-10 xl:space-y-0 xl:my-0"
           >
             <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
             Com 4 anos de experiência no mercado, a Martins Soluções Web é especialista em transformar negócios com sites de alta conversão, aplicativos personalizados e automação inteligente via WhatsApp. Nosso foco é entender suas necessidades, adaptar cada projeto ao seu orçamento e entregar soluções que impulsionam sua presença online de forma estratégica e eficiente.
@@ -284,9 +284,9 @@ export default function Home() {
         </section>
 
         {/* Projects */}
-        <section id="projects" data-scroll-section className="p-y-40 sm:p-y-auto">
+        <section id="projects" data-scroll-section className="h-[100vh]">
           {/* Gradient */}
-          <div data-scroll data-scroll-speed=".4" className="my-0">
+          <div data-scroll data-scroll-speed=".4" className="mt-24 h-full">
             <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
               ✨ Projetos
             </span>
@@ -354,7 +354,7 @@ export default function Home() {
             data-scroll
             data-scroll-speed=".4"
             data-scroll-position="top"
-            className="mt-24 flex flex-col justify-start space-y-10 lg:my-0"
+            className="mt-24 flex h-full flex-col justify-start space-y-10 lg:my-0"
           >
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -397,7 +397,7 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section id="contact" data-scroll-section className="mb-64 p-y-40 sm:p-y-auto">
+        <section id="contact" data-scroll-section className="mb-64 h-[100vh]">
           <div
             data-scroll
             data-scroll-speed=".4"
