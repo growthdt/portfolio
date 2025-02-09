@@ -24,14 +24,11 @@ const slideUp = {
 };
 
 const words = [
-  "Hello",
-  "Bonjour",
-  "Ciao",
-  "Olà",
-  "やあ",
-  "Hallå",
-  "Guten tag",
-  "Hallo",
+  "Soluções inovadoras",
+  "de alta qualidade",
+  "para impulsionar",
+  "o crescimento digital",
+  "da sua empresa!",
 ];
 
 export default function Preloader() {
@@ -48,7 +45,7 @@ export default function Preloader() {
       () => {
         setIndex(index + 1);
       },
-      index == 0 ? 1000 : 150,
+      index == 0 ? 1000 : 300,
     );
   }, [index]);
 
@@ -76,7 +73,6 @@ export default function Preloader() {
       {dimension.width > 0 && (
         <>
           <motion.p variants={opacity} initial="initial" animate="enter">
-            <span></span>
             {words[index]}
           </motion.p>
           <svg>

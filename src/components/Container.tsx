@@ -5,10 +5,10 @@ import { cn, scrollTo } from "@/lib/utils";
 import { useState, useEffect } from "react";
 import Footer from "@/components/Footer";
 import { useRouter } from "next/router";
-import Preloader from "@/components/Preloader";
 import styles from "@/styles/Container.module.css";
 import Image from 'next/image';
 import ContactCircle from "./animated/contact-circle";
+import Preloader from "./Preloader";
 
 type IconProps = {
   ["data-hide"]: boolean;
