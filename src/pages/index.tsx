@@ -349,12 +349,12 @@ export default function Home() {
         </section>
 
         {/* Services */}
-        <section id="services" data-scroll-section>
+        <section id="services" data-scroll-section className="h-[100vh]">
           <div
             data-scroll
             data-scroll-speed=".4"
             data-scroll-position="top"
-            className="mt-24 flex h-full flex-col justify-start space-y-10 lg:my-0"
+            className="mt-24 mb-64 sm:mb-0 flex h-full flex-col justify-start space-y-10 lg:my-0"
           >
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -397,7 +397,7 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section id="contact" data-scroll-section className="mb-64 h-[100vh]">
+        <section id="contact" data-scroll-section className="h-[60vh]">
           <div
             data-scroll
             data-scroll-speed=".4"

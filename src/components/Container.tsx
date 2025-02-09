@@ -43,6 +43,7 @@ const navLinks = [
   { href: "#about", text: "sobre" },
   { href: "#projects", text: "projetos" },
   { href: "#services", text: "serviços" },
+  { href: "#contact", text: "contato" },
 ];
 
 function handleClick(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
@@ -193,7 +194,7 @@ export default function Container(props: ContainerProps) {
         <AnimatePresence key="menu">
           {isOpen && (
             <motion.div
-              className="fixed right-0 top-0 z-40 flex h-[100%] w-full flex-col justify-start overflow-y-hidden bg-background"
+              className="fixed right-0 top-0 z-999 flex h-[122vh] w-full flex-col justify-start overflow-y-hidden bg-background"
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
