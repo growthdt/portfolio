@@ -255,7 +255,7 @@ export default function Home() {
         </section>
 
         {/* About */}
-        <section id="about" data-scroll-section>
+        <section id="about" data-scroll-section className="h-[100vh] sm:h-auto">
           <div
             data-scroll
             data-scroll-speed=".4"
@@ -284,7 +284,7 @@ export default function Home() {
         </section>
 
         {/* Projects */}
-        <section id="projects" data-scroll-section>
+        <section id="projects" data-scroll-section className="h-[100vh] sm:h-auto">
           {/* Gradient */}
           <div data-scroll data-scroll-speed=".4" className="my-0">
             <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
@@ -397,7 +397,7 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section id="contact" data-scroll-section className="mb-64">
+        <section id="contact" data-scroll-section className="mb-64 h-[100vh] sm:h-auto">
           <div
             data-scroll
             data-scroll-speed=".4"
