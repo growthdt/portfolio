@@ -354,7 +354,7 @@ export default function Home() {
             data-scroll
             data-scroll-speed=".4"
             data-scroll-position="top"
-            className="mt-24 mb-64 sm:mb-0 flex h-full flex-col justify-start space-y-10 lg:my-0"
+            className="mt-24 sm:mb-0 flex h-full flex-col justify-start space-y-10 lg:my-0"
           >
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -397,7 +397,7 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section id="contact" data-scroll-section className="h-[60vh]">
+        <section id="contact" data-scroll-section className="h-[60vh] mt-[800px] sm:mt-[0px]">
           <div
             data-scroll
             data-scroll-speed=".4"
