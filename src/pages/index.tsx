@@ -138,7 +138,7 @@ export default function Home() {
 
         if (li.getAttribute("href") === `#${current}`) {
           li.classList.add("nav-active");
-          console.log(li.getAttribute("href"));
+          // console.log(li.getAttribute("href"));
         }
       });
     }
@@ -255,7 +255,7 @@ export default function Home() {
         </section>
 
         {/* About */}
-        <section id="about" data-scroll-section className="h-[100vh] sm:h-auto">
+        <section id="about" data-scroll-section className="p-y-40 sm:p-y-auto">
           <div
             data-scroll
             data-scroll-speed=".4"
@@ -284,7 +284,7 @@ export default function Home() {
         </section>
 
         {/* Projects */}
-        <section id="projects" data-scroll-section className="h-[100vh] sm:h-auto">
+        <section id="projects" data-scroll-section className="p-y-40 sm:p-y-auto">
           {/* Gradient */}
           <div data-scroll data-scroll-speed=".4" className="my-0">
             <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
@@ -397,7 +397,7 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section id="contact" data-scroll-section className="mb-64 h-[100vh] sm:h-auto">
+        <section id="contact" data-scroll-section className="mb-64 p-y-40 sm:p-y-auto">
           <div
             data-scroll
             data-scroll-speed=".4"
