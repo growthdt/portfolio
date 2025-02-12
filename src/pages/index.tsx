@@ -55,13 +55,13 @@ const projects = [
     href: "https://martinssolucoesweb.site/cupcakesdamari",
   },
   {
-    title: "4",
-    description: "",
-    image: "",
-    href: "",
+    title: "Andrade & Tavares Advocacia",
+    description: "Soluções jurídicas eficazes para a proteção e crescimento do seu negócio.",
+    image: "https://i.ibb.co/9k1gR9Q6/Screenshot-2025-02-12-at-19-22-54.png",
+    href: "https://martinssolucoesweb.site/andradeetavaresadvocacia/",
   },
   {
-    title: "This website",
+    title: "",
     description: "",
     image: "",
     href: "",
